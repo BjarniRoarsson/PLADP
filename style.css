@@ -1,9 +1,9 @@
 html {
-    background-image: url('background.png'); /* URL de l'image de fond */
-    background-size: cover; /* L'image occupe tout l'écran sans se déformer */
-    background-position: center; /* L'image est centrée dans la fenêtre */
-    background-repeat: no-repeat; /* L'image ne se répète pas */
-    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+  /*  background-image: url('background.png'); /* URL de l'image de fond */
+  /*  background-size: cover; /* L'image occupe tout l'écran sans se déformer */
+  /*  background-position: center; /* L'image est centrée dans la fenêtre */
+  /*  background-repeat: no-repeat; /* L'image ne se répète pas */
+  /*  background-attachment: fixed; /* L'image reste fixe lors du défilement */
 }
 
 .body {
