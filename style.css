@@ -42,7 +42,7 @@ li {
     font-weight: 900;
     font-style: normal; 
     font-size: clamp(1rem, 3vw, 2rem); /* Taille du texte adaptative entre 2rem et 4rem */
-    color: #003366;
+     color: #003366;
     text-align: center; /* Centre le texte du titre */
     margin-bottom: 20px; /* Espace sous le titre (ajustez selon vos besoins) */
     line-height:1.2;
@@ -50,6 +50,9 @@ li {
 
 ul {
     list-style-type: none;
+    width: 100%;
+    padding:0;
+    margin: 0 auto;
 
 }
 
