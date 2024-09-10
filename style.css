@@ -1,9 +1,9 @@
 html {
-  /*  background-image: url('background.png'); /* URL de l'image de fond */
-  /*  background-size: cover; /* L'image occupe tout l'écran sans se déformer */
-  /*  background-position: center; /* L'image est centrée dans la fenêtre */
-  /*  background-repeat: no-repeat; /* L'image ne se répète pas */
-  /*  background-attachment: fixed; /* L'image reste fixe lors du défilement */
+    background-image: url('background.png'); /* URL de l'image de fond */
+    background-size: cover; /* L'image occupe tout l'écran sans se déformer */
+    background-position: center; /* L'image est centrée dans la fenêtre */
+    background-repeat: no-repeat; /* L'image ne se répète pas */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
 }
 
 .body {
@@ -42,12 +42,7 @@ li {
     font-weight: 500;
     font-style: normal; 
     font-size: clamp(1rem, 3vw, 2rem); /* Taille du texte adaptative entre 2rem et 4rem */
-     color: white; /* Couleur du texte */
-    text-shadow:
-        -1px -1px 0 #000,  /* Ombre en haut à gauche */
-        1px -1px 0 #000,   /* Ombre en haut à droite */
-        -1px 1px 0 #000,   /* Ombre en bas à gauche */
-        1px 1px 0 #000;    /* Ombre en bas à droite */
+    color: #000;
     text-align: center; /* Centre le texte du titre */
     margin-bottom: 20px; /* Espace sous le titre (ajustez selon vos besoins) */
     line-height:1.2;
