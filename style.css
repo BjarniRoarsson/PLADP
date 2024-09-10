@@ -1,0 +1,131 @@
+html {
+    background-image: url('background.png'); /* URL de l'image de fond */
+    background-size: cover; /* L'image occupe tout l'écran sans se déformer */
+    background-position: center; /* L'image est centrée dans la fenêtre */
+    background-repeat: no-repeat; /* L'image ne se répète pas */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+}
+
+.body {
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Hauteur minimale pour remplir l'écran */
+    padding: 20px; /* Espacement autour du conteneur (ajustez selon vos besoins) */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions de l'élément */
+}
+
+h1, p, a  {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    text-align: center; /* Centre le texte du titre */
+    font-size: clamp(1rem, 3vw, 2rem); /* Taille du texte adaptative entre 2rem et 4rem */
+    margin-bottom: 20px; /* Espace sous le titre (ajustez selon vos besoins) */
+    line-height:1.2;
+}
+
+h6 {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;  
+}
+
+li {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal; 
+    font-size: clamp(1rem, 3vw, 2rem); /* Taille du texte adaptative entre 2rem et 4rem */
+     color: white; /* Couleur du texte */
+    text-shadow:
+        -1px -1px 0 #000,  /* Ombre en haut à gauche */
+        1px -1px 0 #000,   /* Ombre en haut à droite */
+        -1px 1px 0 #000,   /* Ombre en bas à gauche */
+        1px 1px 0 #000;    /* Ombre en bas à droite */
+    text-align: center; /* Centre le texte du titre */
+    margin-bottom: 20px; /* Espace sous le titre (ajustez selon vos besoins) */
+    line-height:1.2;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+/* Styles pour la div contenant les images */
+.images {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne suivante si nécessaire */
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 20px; /* Espace entre les images (ajustez selon vos besoins) */
+    padding: 20px; /* Padding autour de la div (ajustez selon vos besoins) */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions de l'élément */
+}
+
+/* Styles pour les images */
+.images img {
+    width: 100%; /* Les images prennent 100% de la largeur de leur conteneur parent */
+    max-width: 45%; /* Largeur maximale pour les images côte à côte */
+    height: auto; /* Conserve les proportions de l'image */
+    display: block; /* Évite les espaces en dessous des images */
+}
+
+/* Media Query pour les petits écrans */
+@media (max-width: 768px) {
+    .images img {
+        max-width: 100%; /* Les images prennent 100% de la largeur du conteneur lorsque l'écran est petit */
+    }
+}
+
+
+.button-container {
+    display: flex; /* Utilise Flexbox pour les boutons */
+    justify-content: space-around; /* Espacement égal entre les boutons */
+    align-items: center; /* Aligne les boutons au centre verticalement */
+    width: 100%; /* Largeur du conteneur (ajustable) */
+}
+
+.custom-button {
+    display: inline-block;
+    background-color: #003366; /* Bleu foncé (ambulances privées) */
+    color: white; /* Texte blanc */
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none; /* Supprimer la décoration de lien (soulignement) */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Pour un effet de transition fluide */
+    border-radius: 5px; /* Coins légèrement arrondis */
+    flex: 1; /* Les boutons prennent la même largeur */
+    text-align: center; /* Texte centré à l'intérieur des boutons */
+    margin: 0 10px; /* Espacement horizontal entre les boutons */
+}
+
+.custom-button:hover {
+    transform: scale(1.05); /* Agrandir légèrement au hover */
+    box-shadow: 0 0 10px white; /* Légère ombre blanche */
+}
+
+/* Media Query pour les petits écrans */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Aligne les boutons en colonne */
+    }
+
+    .custom-button {
+        margin: 10px 0; /* Espacement vertical entre les boutons */
+        width: 100%; /* Chaque bouton prend la largeur totale */
+    }
+}
+
+
+.full-screen-image {
+    width: 90%;
+    height: 90%;
+    object-fit: cover; /* L'image occupe tout l'espace sans se déformer */
+}
